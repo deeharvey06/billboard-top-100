@@ -1,11 +1,11 @@
-var billboard = require("../billboard-top-100.js").getChart;
-var listCharts = require("../billboard-top-100.js").listCharts;
+const billboard = require('../billboard-top-100.js').getChart;
+const listCharts = require('../billboard-top-100.js').listCharts;
 
-listCharts(function(data){
-	console.log(data);
+listCharts((data) => {
+  console.log(data);
 });
 
-billboard('hot-100', '2016-11-19', function(songs, err){
-	if (err) console.log(err);
-	console.log(songs);
+billboard('hot-100', '2016-11-19', (songs, err) => {
+  if (err) console.log(err);
+  console.log(songs);
 });

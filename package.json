@@ -5,12 +5,14 @@
   "main": "billboard-top-100.js",
   "dependencies": {
     "cheerio": "^0.20.0",
+    "express": "^4.15.4",
     "request": "^2.72.0"
   },
   "devDependencies": {
     "jshint": "^2.9.4"
   },
   "scripts": {
+    "start": "node ./server/server.js",
     "test": "./node_modules/jshint/bin/jshint ./tests/test.js"
   },
   "repository": {
